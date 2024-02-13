@@ -1,0 +1,903 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <!-- В будещем название файла competitions.html -->
+        <link rel="stylesheet" href="static/css/header.css">
+    
+        <link rel="stylesheet" href="static/css/main.css">
+        <!--Линк для этой страницы-->
+        <link rel="stylesheet" href="static/css/competitions.css">
+    
+        <link rel="stylesheet" href="static/css/time.css">
+    
+        <link rel="stylesheet" href="static/css/nav.css">
+        <link rel="stylesheet" href="static/css/nav-login.css">
+        <link rel="stylesheet" href="static/css/nav-mobile.css">
+        <link rel="stylesheet" href="static/css/aside.css">
+        <link rel="stylesheet" href="static/css/aside_mobile.css">
+        <link rel="stylesheet" href="static/css/notifications.css">
+    
+    
+        <link rel="stylesheet" href="static/css/footer.css">
+        <link rel="stylesheet" href="static/css/search-footer.css">
+        <link rel="stylesheet" href="static/css/burger.css">
+        <link rel="stylesheet" href="static/css/filter-footer.css">
+        <link rel="stylesheet" href="static/css/search.css">
+    
+    
+        <link rel="stylesheet" href="static/css/style.css">
+        <link rel="stylesheet" href="static/css/media.css">
+    
+    </head>
+    
+    <body>
+    <noscript>У вас отключен java script, дальнейшее использование не возможно</noscript>
+        <div class="wrapper">
+            <header class="header">
+                <ul class="header-ul">
+                    <!--Логотип  1-->
+                    <li class="header-li" title="Самоцветы России">
+                        <a class="a-logo" href="#">
+                            <img class="a-logo-img" src="static/img/png/logo.png" alt="Самоцветы России">
+                            <h1>Самоцветы России</h1>
+                        </a>
+                    </li>
+                    <!-- Уведомления 2-->
+                    <li class="header-li pop-up-btn"  title="Уведомление для Вася Пупкин">
+                        <div class="list-above" id="0">
+                            <span class="notification-quantity-all">7</span>
+                            <img src="static/img/png/ico/bell.png" alt="Смотреть новые уведомления">
+                        </div>
+                    </li>
+                    <!-- Поиск 3-->
+                    <li class="header-li" title="Поиск конкурсов">
+                        <form action="#">
+                            <label class="header-label">
+                                <input class="input-style" type="text"  id="search"
+                                    placeholder="Поиск конкурсов">
+    
+                            </label>
+                            <label class="header-label">
+                                <button type="submit"><img src="static/img/png/ico/search.png" alt="Поиск"></button>
+                            </label>
+                        </form>
+    
+                    </li>
+                    <!-- Пользователь 4-->
+                    <li class="header-li pop-up-btn"  title="Меню пользователя Вася Пупкин">
+                        <div class="list-above ">
+                            <img src="static/img/png/default_avatar.jpg" alt="Вася Пупкин">
+                        </div>
+                    </li>
+                    <!-- Регистрация/Вход 5-->
+                    <li class="header-li d_n" title="Регистрация/Вход">
+                        <a href="#" class="list-above ">
+                            <img src="static/img/png/ico/login.png" alt="Регистрация/Вход">
+                        </a>
+                    </li>
+                </ul>
+            </header>
+    
+            <nav class="notifications pop-up-menu" >
+                <ul class="notifications-ul ">
+                    
+                    <li class="notifications-li">
+                        <a href="#">Конкурсы</a>
+                        <span>1</span>
+                        <ul class="dot-menu">
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                        </ul>
+                        <ul class="notification-ul d_n" id="notification-1">
+                            <li class="notification-li" title="Новый конкурс от Жорик Варданов">
+                                <a href="">
+                                    <img src="static/img/png/ico/cup.png" alt="Конкурсы">
+                                    <span><i>23.05.2024 13:52</i> куратор: <strong>Жорик Варданов</strong></span>
+                                    <span>Русский народный танец </span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="notifications-li">
+                        <a href="#">Новости</a>
+                        <span>3</span>
+                        <ul class="dot-menu">
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                            <li class="dot"></li>
+                        </ul>
+                        <ul class="notification-ul d_n" id="notification-2">
+                            <li class="notification-li" title="Новая новость автор Клава Писялакакала">
+                                <a href="#">
+                                    <img src="static/img/png/ico/news.png" alt="Новости">
+                                    <span><i>23.05.2024 13:52</i> автор: <strong>Клава Писялакакала</strong></span>
+                                    <span>Итоги конкурса... </span>
+                                </a>
+                            </li>
+                            <li class="notification-li" title="Новая новость автор Клава Писялакакала">
+                                <a href="#">
+                                    <img src="static/img/png/ico/news.png" alt="Новости">
+                                    <span><i>23.05.2024 13:52</i> автор: <strong>Клава Писялакакала</strong></span>
+                                    <span>Итоги конкурса... </span>
+                                </a>
+                            </li>
+                            <li class="notification-li" title="Новая новость автор Клава Писялакакала">
+                                <a href="#">
+                                    <img src="static/img/png/ico/news.png" alt="Новости">
+                                    <span><i>23.05.2024 13:52</i> автор: <strong>Клава Писялакакала</strong></span>
+                                    <span>Итоги конкурса... </span>
+                                </a>
+                            </li>
+    
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+    
+            <nav class="login pop-up-menu" >
+                <ul class="login-ul">
+                    <li class="login-li">
+                        <a href="">
+                            <span>Вход/Регистрация</span>
+                            <img src="static/img/png/ico/login.png" alt="Вход/Регистрация">
+                        </a>
+                    </li>
+                    <li class="login-li">
+                        <a href="v">
+                            <span>Кабинет участника</span>
+                            <img src="static/img/png/ico/user.png" alt="Кабинет участника">
+                        </a>
+                    </li>
+                    <li class="login-li">
+                        <a href="personal-area.html">
+                            <span>Кабинет администратора</span>
+                            <img src="static/img/png/ico/adminPanel.png" alt="Кабинет администратораа">
+                        </a>
+                    </li>
+                    <li class="login-li">
+                        <a href="personal-area.html">
+                            <span>Кабинет жюри</span>
+                            <img src="static/img/png/ico/jury-black.png" alt="Кабинет жюри">
+                        </a>
+    
+                    </li>
+                    <li class="login-li">
+                        <a href="personal-area.html">
+                            <span>Кабинет куратора</span>
+                            <img src="static/img/png/ico/curator-black.png" alt="Кабинет автора">
+                        </a>
+                    </li>
+                    <li class="login-li">
+                        <a href="">
+                            <span>Настройки профиля</span>
+                            <img src="static/img/png/ico/setting.png" alt="Настройки">
+                        </a>
+                    </li>
+                    <li class="login-li">
+                        <a href="">
+                            <span>Выход</span>
+                            <img src="static/img/png/ico/logout.png" alt="Выход">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <nav class="nav">
+                <ul class="nav-ul">
+                    <li class="nav-li" title="Главная">
+                        <a class="nav-li-a" href="#">
+                            <img src="static/img/png/ico/diamond.png" alt="Перейти на главную страницу сайта">
+                            <span>Главная</span>
+                            <span></span>
+                        </a>
+                    </li>
+                    <li class="nav-li" title="Новые конкурсы">
+                        <a class="nav-li-a" href="competition.html">
+                            <img src="static/img/png/ico/cup.png" alt="Конкурсы">
+                            <span>Конкурсы</span>
+                            <span title="Новые конкурсы">2</span>
+                        </a>
+                    </li>
+                    <li class="nav-li" title="Новости">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/news.png" alt="Конкурсы">
+                            <span>Новости</span>
+                            <span title="Новые новости">3</span>
+                        </a>
+                    </li>
+                    <li class="nav-li" title="Моя страница">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/user.png" alt="Конкурсы">
+                            <span>Моя страница</span>
+                            <span title="Новые комментарии">1</span>
+                        </a>
+                    </li>
+                    <li class="nav-li" title="Сообщения">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/envelope.png" alt="Сообщения">
+                            <span>Сообщения</span>
+                            <span title="Новые сообщения">1</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-li" title="Блокнот">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/notebook.png" alt="Блокнот">
+                            <span>Блокнот</span>
+                            <span title="Новые записи в блокнот">1</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-li" title="Сообщения">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/users.png" alt="Сообщения">
+                            <span>Участники</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-li" title="Коллективы">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/team.png" alt="Коллективы">
+                            <span>Коллективы</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-li" title="Профиль">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/setting.png" alt="Профиль">
+                            <span>Профиль</span>
+                        </a>
+                    </li>
+                    <li class="nav-li" title="Помощь">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/help.png" alt="Помощь">
+                            <span>Помощь</span>
+                        </a>
+                    </li>
+                    
+                    <li class="nav-li survey" title="Помощь">
+                        <a class="nav-li-a" href="">
+                            <img src="static/img/png/ico/survey-white.png" alt="Анонимный опрос">
+                            <span>Анонимный опрос</span>
+                        </a>
+                    </li>
+                </ul>
+
+               
+               
+            </nav>
+    
+            <aside class="aside-mobile pop-up-menu" >
+                <form action="#" class="aside-mobile-form">
+                    <label class="label-filter" title="Список категорий">
+                        <span class="label-mobile-span">Категории:</span>
+                        <select class="input-style" name="category">
+                            <option value="">Все</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                        </select>
+                    </label>
+                    <label class="label-filter " title="Условия оплаты">
+                        <span class="label-mobile-span">Условия:</span>
+                        <select class="input-style" name="conditions">
+                            <option value="">Все</option>
+                            <option value="">Платно</option>
+                            <option value="">Бесплатно</option>
+                            <option value="">Спонсорский</option>
+                        </select>
+                    </label>
+                    <label class="label-filter " title="Куратор">
+                        <span class="label-mobile-span">Куратор:</span>
+                        <select class="input-style" name="curator">
+                            <option value="">Все</option>
+                            <option value="">Вася Пупкин</option>
+                            <option value="">Петя Батарейкин</option>
+                            <option value="">Степа Подайпотроны</option>
+                        </select>
+                    </label>
+                    <label class="label-filter " title="Статус">
+                        <span class="label-mobile-span">Статус:</span>
+                        <select class="input-style" name="status">
+                            <option value="">Все</option>
+                            <option value="">Принимает заявки</option>
+                            <option value="">Идет</option>
+                            <option value="">Окончен</option>
+                        </select>
+                    </label>
+                    <div class="filter-btns">
+                        <button class="aside-ul-all-a" type="submit">Применить</button>
+                        <button class="aside-ul-all-a" type="reset">Сбросить</button>
+                    </div>
+                </form>
+            </aside>
+    
+            <nav class="nav-mobile pop-up-menu" >
+                <ul class="nav-mobile-ul">
+                    <li class="nav-mobile-li" title="Перейти на главную страницусайта">
+                        <a class="nav-mobile-li-a" href="index.html">
+                            <img src="static/img/png/ico/diamond.png" alt="Перейти на главную страницусайта">
+                            <span></span>
+                            <span>Главная</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Конкурсы">
+                        <a class="nav-mobile-li-a" href="competition.html">
+                            <img src="static/img/png/ico/cup.png" alt="Конкурсы">
+                            <span title="Новые конкурсы">2</span>
+                            <span>Конкурсы</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Новости">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/news.png" alt="Новости">
+                            <span title="Новые новости">3</span>
+                            <span>Новости</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Моя страница">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/user.png" alt="Моя страница">
+                            <span title="Новые комментарии">1</span>
+                            <span>Моя страница</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Новые сообщения">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/envelope.png" alt="Сообщения">
+                            <span title="Новые сообщения">1</span>
+                            <span>Сообщения</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-mobile-li" title="Блокнот">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/notebook.png" alt="Блокнот">
+                            <span title="Новые сообщения">2</span>
+                            <span>Блокнот</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Кураторы">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/curator-black.png" alt="Кураторы">
+                            <span></span>
+                            <span>Кураторы</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Жюри">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/jury-black.png" alt="Жюри">
+                            <span></span>
+                            <span>Жюри</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Победители">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/winner-black.png" alt="Победители">
+                            <span></span>
+                            <span>Победители</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Участники">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/users.png" alt="Участники">
+                            <span></span>
+                            <span>Участники</span>
+                        </a>
+    
+                    </li>
+                    <li class="nav-mobile-li" title="Коллективы">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/team.png" alt="Коллективы">
+                            <span></span>
+                            <span>Коллективы</span>
+                        </a>
+                    </li>
+                    <li class="nav-mobile-li" title="Помощь">
+                        <a class="nav-mobile-li-a" href="">
+                            <img src="static/img/png/ico/help.png" alt="Помощь">
+                            <span></span>
+                            <span>Помощь</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <main class="main">
+            
+               <!--Prize-->
+               <section class="aside-prize aside-prize-mobile" title="Приз для Вася Пупкин, за 1 место в конкурсе">
+                <h2>Приз за победу в конкурсе</h2>
+                <div class="aside-prize-block ">
+                    <ul class="aside-prize-ul ">
+                        <li><img src="static/img/png/ico/money.png" alt="Рубль"></li>
+                        <li>Награда для Вася Пупкин</li>
+                        <li title="Призовой фонд">50000 &#8381;</li>
+                        <li title="Вывести приз"><a class="withdraw-money" href="#">Забрать</a></li>
+                        <li title="Правила проекта"><i>Нажимая "Вывести приз" вы соглашаетесь с <a href="#">правилами проекта</a></i></li>
+                    </ul>
+                </div>
+               </section>
+                 <!-- Конкурсы, страница пользователя, сооьщество, конкурсы, правила-->
+                 <article class="competition">
+
+                    <header class="competition-header">
+                        <h3 title="Русский народный танец, народный танец русский, народный танец русский, дата проведения">
+                            <a href="#">Русский народный танец, народный танец русский, народный танец русский</a>
+                        </h3>
+                        <ul class="competition-header-ul">
+                            <li class="competition-header-li" title="Старт конкурса 14 марта 2024">
+                                <span>14.03.2024 </span>
+                            </li>
+                            <li class="competition-header-li" title="Финал конкурса 24 апрель 2024">
+                                <span>24.05.2024</span>
+                            </li>
+                            <li class="competition-header-li" title="Спонсорский">
+                                <span class="competition-p">Спонсорский</span>
+                            </li>
+                            <li class="competition-header-li" title="Зявки принимаються до 23.06.2024">
+                                <span> Зявки принимаються до 23.06.2024 00:00</span>
+                            </li>
+                        </ul>
+                    </header>
+    
+                    <section title="Краткое  описание конкурса">
+                        <h2>Краткое описание конкурса</h2>
+    
+                        <ul class="competition-section-ul">
+    
+                            <li class="competition-section-li">
+                                <img src="static/img/jpg/con1.jpg" alt="Русский народный танец">
+                                <a href="" title="Добавить в блокнот" class="com-a-0">
+                                    <img src="static/img/png/ico/notebook-white.png" alt="Добавить в блокнот">
+                                </a>
+                            </li>
+    
+                            <li title="Описание конкурса" class="competition-section-li">
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, et corrupti rerum labore
+                                    ex maxime porro fuga, quam asperiores iusto explicabo possimus veritatis quas nihil,
+                                    animi a quaerat iure? Velit </p>
+                                <a href="#" class="com-a-1" title="Читать полностью">Подробнее...</a>
+                            </li>
+                        </ul>
+    
+                    </section>
+
+                    <section class="time-section">
+                        <ul>
+                            <li title="Время до финала" class="time" >
+                                <h6>До финала осталось</h6>
+                                <ul>
+                                    <li>
+                                        <span  class="time-aside-span"></span>
+                                        <span class="time-aside-span">Дней</span>
+                                    </li>
+                                    <li>
+                                        <span class="time-aside-span"></span>
+                                        <span class="time-aside-span">Часов</span>
+                                    </li>
+                                    <li>
+                                        <span class="time-aside-span"></span>
+                                        <span class="time-aside-span">Минут</span>
+                                    </li>
+                                    <li>
+                                        <span class="time-aside-span"></span>
+                                        <span class="time-aside-span">Секунд</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </section>
+
+                    <footer>
+                        <ul class="competition-info-ul">
+    
+                            <li class="competition-info-li" title="Понравилось">
+                                <span>45</span>
+                                <img src="static/img/png/ico/like-white.png" alt="Понравилось">
+                            </li>
+                            <li class="competition-info-li" title="Комментарии">
+                                <span>45</span>
+                                <img src="static/img/png/ico/message-white.png" alt="Комментарии">
+                            </li>
+                            <li class="competition-info-li" title="Участники">
+                                <span>45</span>
+                                <img src="static/img/png/ico/participants-white.png" alt="Участники">
+                            </li>
+                            <li class="competition-info-curator" title="Куратор: Вася Батарейкин">
+                                <span>Куратор:</span>
+                                <a href="#">Вася Батарейкин</a>
+                            </li>
+    
+                        </ul>
+                    </footer>
+    
+                </article>
+                 
+     
+                <div class="load-post">
+                    <span></span>
+                </div>
+            </main>
+    
+            <aside class="aside">
+        
+                <!--Prize-->
+                <section class="aside-prize " title="Приз для Вася Пупкин, за 1 место в конкурсе">
+                    <h2>Приз за победу в конкурсе</h2>
+                    <div class="aside-prize-block ">
+                        <ul class="aside-prize-ul ">
+                            <li><img src="static/img/png/ico/money.png" alt="Рубль"></li>
+                            <li>Награда для Вася Пупкин</li>
+                            <li title="Призовой фонд">50000 &#8381;</li>
+                            <li title="Вывести приз"><a class="withdraw-money" href="#">Забрать</a></li>
+                            <li title="Правила проекта"><i>Нажимая "Вывести приз" вы соглашаетесь с <a href="#">правилами проекта</a></i></li>
+                        </ul>
+                    </div>
+                </section>
+
+                 <!-- Profile -->
+            <section title="Профиль Петушок Уткиняйцев" class="aside-section d_n">
+                <header class="aside-header-drop">
+                    <h4>Петушокович Уткиняйцевичь</h4>
+                    <img class="aside-img" src="static/img/png/ico/user-white.png" alt="фильтр">
+                </header>
+                <ul class="aside-ul aside-profile-ul">
+                    <li title="Петушокович Уткиняйцевичь">
+                        <img src="static/img/png/default_avatar.jpg" alt="">
+                    </li>
+                    <li>
+                        
+                    </li>
+                   
+                </ul>
+            </section>
+                <!-- filter -->
+                <section title="Настройка фильтра" class="aside-section">
+                    <header class="aside-header-drop">
+                        <h4>Фильтр конкурсов</h4>
+                        <img class="aside-img" src="static/img/png/ico/filter.png" alt="фильтр">
+                    </header>
+    
+                    <form action="#">
+                        <label class="label-filter" title="Список категорий">
+                            <span>Категории:</span>
+                            <select class="input-style" name="category">
+                                <option value="">Все</option>
+                                <option value="">Музыка</option>
+                                <option value="">Танцы</option>
+                                <option value="">Категория</option>
+                                <option value="">Музыка</option>
+                                <option value="">Танцы</option>
+                                <option value="">Категория</option>
+                                <option value="">Музыка</option>
+                                <option value="">Танцы</option>
+                                <option value="">Категория</option>
+                            </select>
+                        </label>
+                        <label class="label-filter " title="Условия оплаты">
+                            <span>Условия:</span>
+                            <select class="input-style" name="conditions">
+                                <option value="">Все</option>
+                                <option value="">Платно</option>
+                                <option value="">Бесплатно</option>
+                                <option value="">Спонсорский</option>
+                            </select>
+                        </label>
+                        <label class="label-filter " title="Куратор">
+                            <span>Куратор:</span>
+                            <select class="input-style" name="curator">
+                                <option value="">Все</option>
+                                <option value="">Вася Пупкин</option>
+                                <option value="">Петя Батарейкин</option>
+                                <option value="">Степа Подайпотроны</option>
+                            </select>
+                        </label>
+                        <label class="label-filter " title="Статус">
+                            <span>Статус:</span>
+                            <select class="input-style" name="status">
+                                <option value="">Все</option>
+                                <option value="">Принимает заявки</option>
+                                <option value="">Идет</option>
+                                <option value="">Окончен</option>
+                            </select>
+                        </label>
+                        <div class="filter-btns">
+                            <button class="aside-ul-all-a" type="submit">Применить</button>
+                            <button class="aside-ul-all-a" type="reset">Сбросить</button>
+                        </div>
+                    </form>
+    
+    
+                </section>
+    
+                <!-- Победители -->
+                <section title="Победители предыдущих конкурсов" class="aside-section">
+    
+                    <header class="aside-header-drop">
+                        <h4>Победители</h4>
+                        <img class="aside-img" src="static/img/png/ico/winner.png" alt="фильтр">
+                    </header>
+    
+                    <ul class="aside-ul d_n">
+                        <li title="Вася Пупкин">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Вася Пупкин">
+                                <span class="aside-ul-user">Вася Пупкин</span>
+                                <span class="aside-ul-contest">Русский народный танец <i>1 место</i></span>
+                            </a>
+                        </li>
+                        <li title="Клава Писялакакала">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Клава Писялакакала">
+                                <span class="aside-ul-user">Клава Писялакакала</span>
+                                <span class="aside-ul-contest">Танцы <i>1 место</i></span>
+                            </a>
+                        </li>
+                        <li title="Генадий Рябошапка">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Генадий Рябошапка">
+                                <span class="aside-ul-user">Генадий Рябошапка</span>
+                                <span class="aside-ul-contest">Стихи про войну <i>1 место</i></span>
+                            </a>
+                        </li>
+   
+                        <li title="Адриан Непейпиво">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Адриан Непейпиво">
+                                <span class="aside-ul-user">Адриан Непейпиво</span>
+                                <span class="aside-ul-contest">Танцы <i>1 место</i></span>
+                            </a>
+                        </li>
+                        <li title="Лолита Надрыщева">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Лолита Надрыщева">
+                                <span class="aside-ul-user">Лолита Надрыщева</span>
+                                <span class="aside-ul-contest">Стихи про войну <i>1 место</i></span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="aside-ul-all d_n">
+                        <a href="#" class="aside-ul-all-a">Показать всех</a>
+                    </div>
+                </section>
+    
+                <!-- Зрительские симпатии -->
+                <section title="Зрительские симпатии" class="aside-section">
+    
+                    <header class="aside-header-drop">
+                        <h4>Зрительские симпатии</h4>
+                        <img class="aside-img" src="static/img/png/ico/spectators-white.png" alt="фильтр">
+                    </header>
+    
+                    <ul class="aside-ul d_n">
+                        <li title="Вася Пупкин">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Вася Пупкин">
+                                <span class="aside-ul-user">Вася Пупкин</span>
+                                <span class="aside-ul-contest">Понравилось зрителям: <i>555</i></span>
+                            </a>
+                        </li>
+                        <li title="Клава Писялакакала">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Клава Писялакакала">
+                                <span class="aside-ul-user">Клава Писялакакала</span>
+                                <span class="aside-ul-contest">Понравилось зрителям: <i>555</i></span>
+                            </a>
+                        </li>
+                        <li title="Генадий Рябошапка">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Генадий Рябошапка">
+                                <span class="aside-ul-user">Генадий Рябошапка</span>
+                                <span class="aside-ul-contest">Понравилось зрителям: <i>555</i></span>
+                            </a>
+                        </li>
+    
+                        <li title="Адриан Непейпиво">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Адриан Непейпиво">
+                                <span class="aside-ul-user">Адриан Непейпиво</span>
+                                <span class="aside-ul-contest">Понравилось зрителям: <i>555</i></span>
+                            </a>
+                        </li>
+                        <li title="Лолита Надрыщева">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Лолита Надрыщева">
+                                <span class="aside-ul-user">Лолита Надрыщева</span>
+                                <span class="aside-ul-contest">Понравилось зрителям: <i>555</i></span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="aside-ul-all d_n">
+                        <a href="#" class="aside-ul-all-a">Показать всех</a>
+                    </div>
+                </section>
+    
+                <!-- Кураторы -->
+                <section title="Кураторы" class="aside-section">
+    
+                    <header class="aside-header-drop">
+                        <h4>Кураторы</h4>
+                        <img class="aside-img" src="static/img/png/ico/curator.png" alt="фильтр">
+                    </header>
+    
+                    <ul class="aside-ul d_n">
+                        <li title="Вася Пупкин">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Вася Пупкин">
+                                <span class="aside-ul-user">Вася Пупкин</span>
+                                <span class="aside-ul-contest">Всего конкурсов: <i>5</i></span>
+                            </a>
+                        </li>
+                        <li title="Клава Писялакакала">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Клава Писялакакала">
+                                <span class="aside-ul-user">Клава Писялакакала</span>
+                                <span class="aside-ul-contest">Всего конкурсов: <i>3</i></span>
+                            </a>
+                        </li>
+                        <li title="Генадий Рябошапка">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Генадий Рябошапка">
+                                <span class="aside-ul-user">Генадий Рябошапка</span>
+                                <span class="aside-ul-contest">Всего конкурсов: <i>4</i></span>
+                            </a>
+                        </li>
+    
+                        <li title="Адриан Непейпиво">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Адриан Непейпиво">
+                                <span class="aside-ul-user">Адриан Непейпиво</span>
+                                <span class="aside-ul-contest">Всего конкурсов: <i>11</i></span>
+                            </a>
+                        </li>
+                        <li title="Лолита Надрыщева">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Лолита Надрыщева">
+                                <span class="aside-ul-user">Лолита Надрыщева</span>
+                                <span class="aside-ul-contest">Всего конкурсов: <i>2</i></span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="aside-ul-all d_n">
+                        <a href="#" class="aside-ul-all-a">Показать всех</a>
+                    </div>
+                </section>
+    
+                <!-- Жюри -->
+                <section title="Жюри" class="aside-section">
+    
+                    <header class="aside-header-drop">
+                        <h4>Жюри</h4>
+                        <img class="aside-img" src="static/img/png/ico/jury.png" alt="фильтр">
+                    </header>
+    
+                    <ul class="aside-ul d_n">
+                        <li title="Вася Пупкин">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Вася Пупкин">
+                                <span class="aside-ul-user">Вася Пупкин</span>
+                                <span class="aside-ul-contest">Оценил конкурсов: <i>5</i></span>
+                            </a>
+                        </li>
+                        <li title="Клава Писялакакала">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Клава Писялакакала">
+                                <span class="aside-ul-user">Клава Писялакакала</span>
+                                <span class="aside-ul-contest">Оценил конкурсов: <i>3</i></span>
+                            </a>
+                        </li>
+                        <li title="Генадий Рябошапка">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Генадий Рябошапка">
+                                <span class="aside-ul-user">Генадий Рябошапка</span>
+                                <span class="aside-ul-contest">Оценил конкурсов: <i>4</i></span>
+                            </a>
+                        </li>
+    
+                        <li title="Адриан Непейпиво">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Адриан Непейпиво">
+                                <span class="aside-ul-user">Адриан Непейпиво</span>
+                                <span class="aside-ul-contest">Оценил конкурсов: <i>11</i></span>
+                            </a>
+                        </li>
+                        <li title="Лолита Надрыщева">
+                            <a href="">
+                                <img src="static/img/png/default_avatar.jpg" alt="Лолита Надрыщева">
+                                <span class="aside-ul-user">Лолита Надрыщева</span>
+                                <span class="aside-ul-contest">Оценил конкурсов: <i>2</i></span>
+                            </a>
+                        </li>
+                    </ul>
+    
+                    <div class="aside-ul-all d_n">
+                        <a href="#" class="aside-ul-all-a">Показать всех</a>
+                    </div>
+                </section>
+            </aside>
+    
+            <footer class="footer">
+                <form class="footer-search pop-up-menu" action="#" >
+                    <label class="footer-label">
+                        <input class="input-style" type="text" name="search"  placeholder="Поиск конкурсов">
+    
+                    </label>
+                    <label class="footer-label">
+                        <button type="submit"><img src="static/img/png/ico/search.png" alt="Поиск"></button>
+                    </label>
+                </form>
+                <div class="footer-main">
+                    <ul>
+                        <li><a title="Самоцветы России" href="#">"Самоцветы России" 2024г</a> </li>
+                        <li><a title="Написать в службу поддержки" href="#">Написать в службу поддержки</a></li>
+                        <li><a title="Политика конфиденциальности" href="#">Политика конфиденциальности</a></li>
+                        <li><a title="Помощь" href="#">Помощь</a></li>
+                    </ul>
+                </div>
+                <div class="footer-mobile">
+                    <ul class="footer-mobile-ul">
+                        <li class="footer-mobile-li pop-up-btn" >
+                            <a>
+                                <div class="search">
+                                    <span class="glass"></span><span class="holder"></span>
+                                </div>
+                                <span class="img-span">Поиск</span>
+                            </a>
+    
+                        </li>
+    
+                        <li class="footer-mobile-li">
+                            <a href="">
+                                <img src="static/img/png/ico/news.png" alt="Новости">
+                                <span class="img-span">Новости</span>
+                            </a>
+    
+                        </li>
+                        <li class="footer-mobile-li">
+                            <a href="">
+                                <img src="static/img/png/ico/user.png" alt="Моя страница">
+                                <span class="img-span">Моя страница</span>
+                            </a>
+                        </li>
+                        <li class="footer-mobile-li">
+                            <a href="">
+                                <img src="static/img/png/ico/notebook.png" alt="Блокнот">
+                                <span class="img-span">Блокнот</span>
+                            </a>
+                        </li>
+    
+                        <li class="footer-mobile-li footer-mobile-li-menu  pop-up-btn" >
+                            <div class="filter">
+                                <span class="f0 f "></span><span class="f1 f"></span><span class="f2 f"></span>
+                            </div>
+                            <span class="img-span">Фильтр</span>
+                        </li>
+                        <li class="footer-mobile-li footer-mobile-li-menu  pop-up-btn" >
+                            <div class="burger">
+                                <span class="b0 b"></span><span class="b1 b"></span><span class="b2 b"></span>
+                            </div>
+                            <span class="img-span">Меню</span>
+                        </li>
+    
+                    </ul>
+                </div>
+            </footer>
+        </div>
+    </body>
+    <script src="static/js/index.js" type="module" defer></script>
+    <script src="static/js/prohibit.js" defer></script>
+</html>

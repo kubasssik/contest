@@ -1,0 +1,325 @@
+.personal-area{
+   width: 100%;
+  min-height: 100%;
+  display: grid;
+  background: rgb(238, 238, 238);
+}
+.aside-personal-area{
+    background: rgb(82, 82, 82);
+    color: white;
+    font-size: 1rem;
+    padding: 1rem;
+    display: none;
+}
+.aside-personal-area-li{
+    display: grid;
+    grid-template-columns: 1rem 1fr;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+.aside-personal-area-li img{
+    width: 100%;
+    height: 1rem;
+}
+
+.aside-personal-area-a{
+    color: white;
+    text-align: start;
+}
+.aside-personal-area-a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+/*---MAIN---**/
+.main-personal-area{
+    width: 100%;
+    padding: 1rem 0;
+   
+}
+.add-competition-form{
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    gap: 1.5rem;
+   
+}
+.add-competition-form label{
+    position: relative;
+    display: grid;
+    gap: .3rem;
+    z-index: 1;
+}
+.personal-area-info{
+    position: absolute;
+    width: 1.2rem;
+    top: .2rem;
+    right: .2rem; 
+    z-index: 2; 
+}
+.personal-area-info img{
+    width: 100%;
+}
+
+.personal-area-date-help{
+    position: absolute;
+    top: -2rem;
+    left: 2rem;
+    background: white;
+    padding: .5rem;
+    box-shadow: 0 0 .1rem 0 black;
+    z-index: 2;
+    border-radius: 1rem;
+    font-size: 1.2rem;
+}
+.add-competition-form label span:nth-child(1){
+    font-size: .8rem;
+    color: gray;
+}
+
+.add-competition-form label span:nth-child(3){
+    font-size: .7rem;
+    color: red;
+}
+.add-competition-form label input{
+    font-size: 1.2rem;
+}
+.add-competition-form label select{
+    font-size: 1.2rem;
+}
+.add-competition-form label textarea{
+    font-size: 1.2rem;
+}
+/*---Дата--*/
+.personal-area-date{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 0 .1rem 0 black;
+    padding: .5rem;
+ 
+}
+/*--Категория Имя--*/
+.personal-area-category{
+    position: relative;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 0 .1rem 0 black;
+    padding: .5rem;
+  
+}
+/*-Пол-*/
+.personal-area-gender{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: .5rem;
+    box-shadow: 0 0 .1rem 0 black;
+    padding: .5rem;
+  
+}
+/*--Уловие оплаты-*/
+.personal-area-pay{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 0 .1rem 0 black;
+    padding:.5rem;
+   
+}
+
+.personal-area-checkbox{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    box-shadow: 0 0 .1rem 0 black;
+    padding:.5rem;
+}
+/***---personal-area-fieldset--***/
+.personal-area-fieldset{
+    position: absolute;
+    top: -.8rem;
+    left: 1rem;
+    padding:  0 1rem;
+    background: rgb(238, 238, 238);
+    font-weight: bold;
+}
+
+.add-competition-form textarea{
+    resize: none;
+    width: 100%;
+    height: 4rem;
+}
+.add-competition-form-btns button{
+    background: var(--blue);
+    color: white;
+    font-size: 1.2rem;
+    padding: .3rem 1rem;
+    box-shadow: 0 0 .1rem 0 black;
+    margin-right: 1rem;
+   
+}
+.add-competition-form-btns button:nth-child(1){
+    background: var(--main-color-1);
+}
+.add-competition-form-btns button:hover{
+    transform: scale(1.1);
+}
+
+/*--my-competitions---*/
+.my-competitions{
+    background-color: rgb(65, 22, 105);
+    padding: 1rem;
+    display: none;
+}
+.my-competitions h6{
+    cursor: pointer;
+    color: white;
+    padding: .3rem;
+}
+.my-competitions ul{
+    display: grid;
+    gap: .5rem;
+    
+}
+.my-competitions-li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .3rem;
+    background: white;
+    padding: .5rem 1rem;
+    font-size: .7rem;
+}
+.my-competitions-li span:nth-child(1){
+    grid-column: 1/2;
+    color: var(--main-color-1);
+}
+.my-competitions-li span:nth-child(2){
+    grid-column: 2/3;
+    color: var(--main-color-1);
+}
+.my-competitions-li span:nth-child(3){
+    grid-column: 1/3;
+    font-size: .8rem;
+    font-weight: bold;
+}
+.my-competitions-li  a{
+    color: black;
+}
+.my-competitions-li-a{
+    justify-self: start;
+    background: white;
+    padding: 1rem;
+    font-size: .8rem;
+}
+.my-competitions-a{
+    font-size: 1rem;  
+    color: var(--main-color-1);
+    font-weight: bold;
+}
+
+/*****--- curator---****/
+.my-competitions-li-curator{
+    display: grid;
+    grid-template-columns: 1fr 5rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    padding: 0.5rem 1rem;
+    background: white;
+    border-radius: .3rem;
+    margin-bottom: .5rem;
+  
+}
+.my-competitions-li-curator span:nth-child(1) {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: start;
+    align-self: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.my-competitions-li-curator span:nth-child(2) {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    justify-self: start;
+    align-self: center;
+}
+.my-competitions-li-curator span:nth-child(3) {
+    grid-column: 2/3;
+    grid-row: 1/3;
+}
+
+.my-competitions-li-curator span img{
+    width: 100%;
+    box-shadow: 0 0 .1rem 0rem black;
+}
+
+.personal-area-checkbox{
+    display: grid;
+    grid-auto-flow: column;
+}
+
+
+.personal-area-checkbox-label{
+    grid-auto-flow: column;
+    gap: 1rem;
+    margin: auto;
+}
+/*Стилизация RADIO*/
+.fake__radio, .fake__checkbox {
+    width: 3rem;
+    height: 1.5rem;
+    background-color: var(--main-color-1);
+	border-radius: 1rem;
+    position: relative;
+	top: -.1rem;
+	cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 0 .1rem 0rem black;
+}
+
+.fake__radio::before, .fake__checkbox::before {
+    content: 'выкл';
+    position: absolute;
+    display: block;
+    width: 1.5rem;
+    height: 1.5rem;
+	border-radius: 1rem;
+    background: rgb(255, 255, 255);
+    top: 0;
+    left: 0;
+    transition: .2s;
+    text-align: center;
+    line-height: 1.4rem;
+    font-size: .6rem;
+}
+
+.radio:checked + .fake__radio::before {
+	left: 1.5rem;
+   
+}
+.radio:checked + .fake__radio{
+	background-color: var( --green);
+   
+}
+
+.checkbox:checked + .fake__checkbox::before {
+	left: 1.5rem;
+    content: 'вкл';
+    color: var(--green);
+    
+}
+
+.checkbox:checked + .fake__checkbox{
+	background-color: var( --green);
+}
+
+
+
+
+
+

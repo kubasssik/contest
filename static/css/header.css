@@ -1,0 +1,129 @@
+.header {
+    /*---Можно попробывать без position: relative;--*/
+   
+    width: 100%;
+    background: white;
+    box-shadow: 0 0 .1rem 0 black;
+    transition: .3s;
+    z-index: 150;
+
+}
+
+/*--js---*/
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+  
+}
+
+.header-ul {
+   
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    
+}
+
+.header-li {
+    justify-self: center;
+    align-self: center;
+    padding: .3rem 0;
+    
+}
+
+/*--Логотип--*/
+.header-li:nth-child(1) {
+    justify-self: start;
+    grid-column: 1/2;
+    margin-left: 1rem;
+}
+
+
+/*--Иконки на header--*/
+.header-li:nth-child(2) img,
+.header-li:nth-child(4) img,
+.header-li:nth-child(5) img {
+    cursor: pointer;
+    width: 2.5rem;
+}
+
+/*-ing user-*/
+.header-li:nth-child(4){
+    grid-column:3/4;
+}
+.header-li:nth-child(4) img {
+    border-radius: 50%;
+    box-shadow: 0 0 .1rem 0 black;
+}
+
+.a-logo {
+    display: grid;
+    grid-auto-flow: column;
+    color: black;
+}
+
+.a-logo img {
+    background-size: cover;
+    width: 3rem;
+}
+
+/*--Уведомление--*/
+.header-li:nth-child(2) {
+    position: relative;
+    grid-column:2/3;
+}
+
+.notification-quantity-all {
+    font-size: .9rem;
+    position: absolute;
+    top: .5rem;
+    left: 0;
+    width: 1.2rem;
+    height: 1.2rem;
+    background: red;
+    color: white;
+    border: .1rem solid white;
+    text-align: center;
+    border-radius: 50%;
+}
+
+/*--Поиск--*/
+.header-li:nth-child(3) {
+    position: relative;
+    display: none;
+    grid-column:2/3;
+    
+}
+
+.header-label {
+    position: relative;
+}
+
+.header-label input {
+    width: 130%;
+    border-radius: .3rem;
+    font-size: 1rem;
+}
+.header-label:nth-child(2){
+    cursor: pointer;
+    position: absolute;
+    right: -30%;
+    top: 50%;
+    transform: translateY(-50%);
+    
+    width: 2rem;
+    border-radius: 0 .3rem .3rem 0;
+}
+.header-li:nth-child(3) button{
+    background: transparent;
+    position: relative;
+}
+
+
+.header-li:nth-child(3) button img {
+  
+    width: 1.2rem;
+    height:1.2rem;
+    
+}

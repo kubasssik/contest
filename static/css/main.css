@@ -1,0 +1,53 @@
+.main {
+    position: relative;
+    width: 100%;
+    padding: 1rem .5rem;
+    display: grid;
+    gap: .5rem;
+}
+
+
+
+
+
+
+
+
+/*--Окно загрузки постов--*/
+.load-post {
+    width: 100%;
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.load-post span {
+    position: relative;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 2rem;
+    height: 2rem;
+    display: inline-block;
+    background: linear-gradient(45deg, rgba(0, 0, 0, 0), var(--blue));
+    border-radius: 50%;
+    animation: load 1s infinite linear;
+    transform: rotate(0);
+}
+
+.load-post span::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    width: 1.9rem;
+    height: 1.9rem;
+    background: var(--main-color);
+}
+
+@keyframes load {
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,45 @@
+.search {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: auto;
+    
+}
+
+.glass {
+    position: absolute;
+    top: .2rem;
+    left: .2rem;
+    width: 1.4rem;
+    height: 1.4rem;
+    background: white;
+    border: .1rem solid black;
+    border-radius: 50%;
+    z-index: 3;
+    transition: .3s;
+}
+.glass-active{
+    width: 2.2rem;
+    height: 0.1rem; 
+    border-radius: 0;
+    border: none;
+    background: black;
+    top: 50%;
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.holder {
+    position: absolute;
+    top: 50%;
+    transform: rotate(45deg);
+    width: 2.2rem;
+    height: 0.1rem;
+    background: #000000;
+    z-index: 2;
+}
+
+

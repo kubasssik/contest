@@ -1,0 +1,100 @@
+.notifications{
+    position: fixed;
+    top: -100%;
+    right: 0; 
+    width: 100%;
+    background: gray;
+    transition: .3s;
+    z-index: 99;
+    padding: 1px;
+    transition: .3s;
+    display: grid;
+}
+.top-header-active{
+    top: 3.6rem;
+}
+.notifications-ul{
+    display: grid;
+    gap: 1px;
+}
+
+.notifications-li{
+    font-size: 1.5rem;
+    background: white;
+    display: grid;
+    grid-template-columns: auto 2rem 3.6rem;
+}
+
+.notifications-li a{
+    color: black;
+    padding: 1rem;
+}
+.notifications-li span{
+    padding: 1rem 0;
+    
+}
+.dot-menu{
+    cursor: pointer; 
+    border-left: .05rem solid gray;
+    display: grid;
+    padding: 1rem;
+}
+.dot{
+    width: .3rem;
+    height: .3rem;
+    border-radius: 50%;
+    background: black;
+    justify-self: center;
+    align-self: center;
+    transition: .3s;
+}
+
+.dot-active{
+    position: relative;
+    width: 1.7rem;
+    height: .1rem;
+    transition: .3s;
+    border-radius: 0;
+}
+.dot-active:nth-child(1){
+    transform: rotate(-45deg);
+    top: 50%;
+}
+.dot-active:nth-child(2){
+    display: none;
+}
+.dot-active:nth-child(3){
+    transform: rotate(45deg);
+    top: -50%;
+}
+
+.notification-ul{
+    grid-column: 1/4;
+    display: grid;
+    gap: .5rem;
+    border-top: .05rem solid gray;
+}
+
+.notification-li a{
+padding: .1rem .5rem;
+font-size: 1rem;
+display: grid;
+grid-template-columns: 4rem auto;
+grid-template-rows: auto auto;
+gap: .3rem;
+border-bottom: .05rem solid black;
+}
+.notification-li i{
+    color: var(--blue);
+}
+.notification-li img{
+    grid-column: 1/2;
+    grid-row: 1/3;
+    width: 70%;
+    margin: auto;
+}
+.notification-li span{
+    grid-column: 2/3;
+    padding: .3rem;
+    
+}

@@ -1,0 +1,40 @@
+.footer-search{
+    width: 100%;
+    background: rgb(255, 223, 163);
+    padding: 1rem;
+    position: fixed;
+    bottom: -100%;
+    border-top: .05rem solid gray;
+    transition: .3s;
+}
+.footer-search-active{
+    bottom: 4rem;
+}
+.footer-label{
+    position: relative;
+}
+.footer-label:nth-child(2){
+    
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 2rem;
+    border-radius: 0 .3rem .3rem 0;
+}
+.footer-label input{
+    width: 100%;
+    border-radius: .3rem;
+    font-size: 1.5rem;
+}
+.footer-label button{
+    width: 120%;
+    height: 2rem;
+    background: transparent;
+  }
+
+.footer-label button img{
+    width: 2rem;
+    height:2rem;;
+}

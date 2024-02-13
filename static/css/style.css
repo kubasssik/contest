@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Protest+Strike&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}  
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+
+
+html,body{
+	height: 100%;
+	width: 100%;
+    font-family: 'Roboto', sans-serif;
+	font-size: 12px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background: white;
+}
+button,textarea{font-family: inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner{padding: 0;border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size: inherit;font-weight: 400;}
+
+
+:root {
+    --blue-gradient: linear-gradient(45deg, #6ab1d7 0%, #33d9de 50%, #002878 100%);
+    --blue: #3183ff ;
+
+    --red-gradient: linear-gradient(45deg, #d76a6a 0%, #de3333 50%, #780000 100%);
+    --red: rgba(120, 0, 0, 0.35);
+
+    --green-gradient: linear-gradient(45deg, #6ad7a0 0%, #33de8e 50%, #00783c 100%);
+    --green: rgb(0, 136, 84);
+
+     --main-color:#eff9ff;
+     --main-color-1:rgb(219, 96, 96);
+}
+h1{
+    justify-self: center;
+    align-self: center;
+    font-size: 1.3rem;
+    color: black;
+}
+
+h1::first-letter{
+    font-size: 1.6rem;
+    
+}
+
+/*-- Для section ---*/
+h2{
+    display: none;
+}
+
+/*-- заголовок ---*/
+h3{
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+}
+h3 a{
+    color: black;
+    transition: .3s;
+}
+h3 a:hover{
+    color: rgb(65, 65, 65);
+    text-decoration: underline;
+}
+
+/*-- aside ---*/
+h4{
+    font-size: 1rem;
+    justify-self: start;
+    align-self: center;
+    color: white;
+    text-shadow: 0 0 .1rem black;
+    font-weight: 600;
+}
+h5{
+
+}
+/*-- на счетчике висит ---*/
+h6{
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+}
+
+i{
+    color:var(--blue) ;
+}
+
+.wrapper {
+    width: 100%;
+    display: grid;
+    background: var(--main-color);
+
+}
+
+.main-header-fixed{
+    position: fixed;
+}
+
+
+
+.input-style{
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    background: var(--main-color);
+    padding: .3rem 1rem;
+   
+    box-shadow: 0 0 .1rem 0rem black;
+   
+}
+
+.d_n{
+    display: none;
+}
+.d_g{
+    display: grid;
+}
+
+/*--- Для меню мобильных --*/
+.pop-up-menu-header{
+    top: 3.6rem;
+}
+.pop-up-menu-main{
+    left: 0; 
+}
+.pop-up-menu-footer{
+    bottom: 4rem;
+}
+
+
+
+
+

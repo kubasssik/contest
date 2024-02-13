@@ -1,0 +1,124 @@
+.section-comments{
+display: grid;
+gap: .5rem;
+margin-bottom: 3.8rem;
+}
+
+.header-comments{
+    display: grid;
+    grid-template-columns: 2rem auto;
+    padding: 1rem;
+    gap: 1rem;
+}
+.header-comments img{
+    width: 100%;
+}
+
+.header-comments span{
+    justify-self: start;
+    align-self: center;
+    font-size: 1.1rem;
+}
+
+.comment-label{
+     position: relative;
+}
+
+.section-comments-textarea{
+    position: relative;
+    background: white;
+    border-radius: .3rem;
+    resize: none;
+    width: 100%;
+    padding: .5rem 6rem .5rem 1rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    z-index: 1;
+    font-size: 1.1rem;
+}
+.comment-label-span{
+    position: absolute;
+    right: .3rem;
+    font-size: .8rem;
+    z-index: 2;
+}
+.comment-label-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 2rem;
+    z-index: 3;
+    background: transparent;
+}
+.comment-label-btn img{
+    width: 2.5rem;
+}
+.comments{
+    display: grid;
+    gap: .5rem;
+}
+.comment{
+    width: 100%;
+    border-radius: .3rem;
+    box-shadow: 0 0 .1rem 0rem black;
+    background: white;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 4rem 1fr;
+    grid-template-rows: repeat(3, auto);
+    gap: .3rem;
+}
+.comment-user-img{
+  width: 100%;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  margin: 0 auto;
+  box-shadow: 0 0 .1rem 0rem black;
+  border-radius: 50%;
+}
+.comment-header{
+    display: grid;
+    grid-template-columns: 1fr 1.5rem;
+}
+.comment-header li:nth-child(1){
+    font-weight: 600;
+}
+.comment-header img,.comment-footer img{
+   width: 1.5rem;
+   cursor: pointer;
+   margin: auto;
+   -webkit-filter: drop-shadow(0 0 .3rem var(--blue));
+   filter: drop-shadow(0 0 .3rem var(--blue));
+}
+.comment-text{
+    font-size: 1.1rem;
+}
+
+.complaint{
+    position: relative;
+}
+
+
+.comment-footer{
+    display: grid;
+    grid-template-columns: 1fr 4rem;
+}
+.comment-footer img{
+    
+}
+
+.comment-footer i{
+    font-size: .7rem;
+    color: var(--main-color-1);
+}
+
+.add-like{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    font-size: 1.3rem;
+    gap: .5rem;
+}
+
+.comment-login{
+    padding: 1rem;
+}
+

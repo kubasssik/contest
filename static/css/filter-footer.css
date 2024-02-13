@@ -1,0 +1,73 @@
+.filter {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    width: 2.2rem;
+    height: 2.2rem;
+    margin: auto;
+}
+
+.f {
+    position: absolute;
+    width: 2.2rem;
+    height: 0.1rem;
+    background: #000000;
+    transition: .3s;
+    border-radius: 1rem;
+}
+
+.f0 {
+    top: .3rem;
+}
+
+.f0::before, .f1::before, .f2::before {
+    position: absolute;
+    display: block;
+    content: '';
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    top: -150%;
+    left: 20%;
+    border-radius: 50%;
+    border: .1rem solid black;
+}
+
+.f1 {
+    height: 0.1rem;
+    top: 1rem;
+}
+.f1::before{
+    left: 70%;
+}
+
+.f2 {
+    top: 1.7rem;
+}
+
+.f2::before{
+    left: 10%;
+}
+
+._f0 {
+    top: 1rem;
+    transform: rotate(-45deg);
+}
+._f0::before{
+ opacity: 0;
+}
+
+._f1 {
+    opacity: 0;
+}
+
+._f2 {
+    top: 1rem;
+    transform: rotate(45deg);
+}
+
+._f2::before {
+    opacity: 0;
+}
+

@@ -1,0 +1,37 @@
+.login{
+    position: fixed;
+    top: -150%;
+    right: 0; 
+    width: 100%;
+    background: gray;
+    transition: .3s;
+    z-index: 99;
+    padding: 1px;
+    transition: .3s;
+}
+.top-header-active{
+    top: 3.6rem;
+}
+.login-ul{
+    display: grid;
+    gap: 1px;
+}
+
+.login-li{
+    padding:  1rem;
+    background: white;
+    cursor: pointer;   
+    
+}
+.login-li:hover{
+    background: #dcf2ff;
+}
+.login-li a{
+    color: black;
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: 90% 10%;
+}
+.login-li img{
+ width: 2rem;
+}

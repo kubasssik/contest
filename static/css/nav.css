@@ -1,0 +1,61 @@
+.nav{
+    position: relative;
+    top: 0;
+    grid-column: 1/3  ;
+    padding: 1rem .5rem;
+    display: none;
+}
+
+.nav-active{
+ top: 3.6rem;
+}
+
+
+.nav-li{
+    font-size: 1rem;
+    
+}
+.nav-li:hover{
+    background: #e7f6ff;
+    transform: scale(1.1);
+}
+
+.survey{
+    background: #33de8e;
+    
+}
+.survey:hover{
+    background: #6ad7a0; 
+}
+.survey a{
+ color: white;
+}
+
+.nav-li-a{
+    display: grid;
+    grid-template-columns: 20% 70% 10%;
+    color: black;
+    padding: .3rem 1rem;
+  
+    
+}
+.nav-li-a img{
+    width: 1.5rem;
+    background-size: cover;
+  
+}
+.nav-li-a span{
+ 
+    justify-self: start;
+    align-self: center;
+}
+.nav-li-a span:nth-child(3){
+    width: 1.2rem;
+    background: var(--blue);
+    border-radius: 50%;
+    text-align: center;
+    box-shadow: 0 0 .1rem 0rem black;
+    color: white;
+    text-shadow: 0 0 .1rem black;
+}
+

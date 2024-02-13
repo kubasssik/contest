@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кабинет</title>
+    <link rel="stylesheet" href="static/css-area/personal-area.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/media.css">
+</head>
+<body>
+    <div class="personal-area">
+
+        <aside class="aside-personal-area">
+            <nav>
+                <ul>
+                    <li class="aside-personal-area-li" title="Главная">
+                        <img src="static/img/png/ico/diamond-white.png" alt="Главная"> 
+                        <a href="index.html" class="aside-personal-area-a">Сайт</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Категории">
+                        <img src="static/img/png/ico/category.png" alt="Категории">
+                        <a href="" class="aside-personal-area-a">Категории</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Конкурсы">
+                        <img src="static/img/png/ico/cup-white.png" alt="">
+                        <a href="" class="aside-personal-area-a">Конкурсы</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Новости">
+                        <img src="static/img/png/ico/news-white.png" alt="Новости">
+                        <a href="" class="aside-personal-area-a">Новости</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Голосование">
+                        <img src="static/img/png/ico/vote-white.png" alt="Голосование">
+                        <a href="" class="aside-personal-area-a">Голосование</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Пользователи">
+                        <img src="static/img/png/ico/users-white.png" alt="Пользователи">
+                        <a href="" class="aside-personal-area-a">Пользователи</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Коллективы">
+                        <img src="static/img/png/ico/team-white.png" alt="Коллективы">
+                        <a href="" class="aside-personal-area-a">Коллективы</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Кураторы">
+                        <img src="static/img/png/ico/curator.png" alt="Кураторы">
+                        <a href="" class="aside-personal-area-a">Кураторы</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Жюри">
+                        <img src="static/img/png/ico/jury.png" alt="Жюри">
+                        <a href="" class="aside-personal-area-a">Жюри</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Профиль">
+                        <img src="static/img/png/ico/setting-white.png" alt="Профиль">
+                        <a href="" class="aside-personal-area-a">Профиль</a>
+                    </li>
+                    <li class="aside-personal-area-li" title="Выход">
+                        <img src="static/img/png/ico/logout-white.png" alt="Выход">
+                        <a href="" class="aside-personal-area-a">Выход</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-personal-area">
+            <form action="" class="add-competition-form">
+                <h6>Создать конкурс</h6>
+                <div class="personal-area-date">
+                    <label title="Старт">
+                        <span>Старт:</span>
+                        <input type="date" class="input-style ">
+                        <span>Ошика: описание ошибки</span>
+                       
+                    </label>
+                    <label title="Финиш">
+                        <span>Финиш:</span>
+                        <input type="date" class="input-style">
+                        <span>Ошика: описание ошибки</span>
+                        
+                    </label>
+                    <span class="personal-area-fieldset">Дата проведения</span>
+                    <span title="Дата проведения конкурса" class="personal-area-info">
+                        <img src="static/img/png/ico/help.png" alt="Помощь">
+                    </span>
+                </div>
+                
+                <div class="personal-area-category">
+                    <label title="Категория">
+                        <span>Категория:</span>
+                        <select class="input-style">
+                            <option value="">Все</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                            <option value="">Музыка</option>
+                            <option value="">Танцы</option>
+                            <option value="">Категория</option>
+                        </select>
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+
+                    <label title="Название конкурса">
+                        <span>Название конкурса:</span>
+                        <input type="text" class="input-style"  id="help-name">
+                        <span>Ошика: описание ошибки</span>
+                        <span class="personal-area-date-help d_n" ></span>
+                    </label>
+
+                    <span class="personal-area-fieldset">Конкурс</span>
+                    <span title="Категория и название конкурса, максимальне название конкурса 100 символов" class="personal-area-info">
+                        <img src="static/img/png/ico/help.png" alt="Помощь">
+                    </span>
+                </div>
+                
+                <div class="personal-area-pay">
+                    <label title="Условие оплаты">
+                        <span>Условие оплаты:</span>
+                        <select class="input-style">
+                            <option value="">Бесплатно</option>
+                            <option value="">Платно</option>
+                            <option value="">Спонсорский</option>
+                        </select>
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+                    <label title="Стоимость участия">
+                        <span>Стоимость участия:</span>
+                        <input type="number" placeholder="00,00" class="input-style">
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+                    <span class="personal-area-fieldset">Условие</span>
+                    <span title="Условие оплаты" class="personal-area-info">
+                        <img src="static/img/png/ico/help.png" alt="Помощь">
+                    </span>
+                </div>
+
+                <div class="personal-area-gender">
+                    <label title="Возраст от">
+                        <span>от:</span>
+                        <input type="text" placeholder="Возраст" class="input-style">
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+                    <label title="Возраст до">
+                        <span>до:</span>
+                        <input type="text" placeholder="Возраст" class="input-style">
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+                    <label title="Пол">
+                        <span>Пол:</span>
+                        <select class="input-style">
+                            <option value="">не выбрано</option>
+                            <option value="">Муж</option>
+                            <option value="">Жен</option>
+                        </select>
+                        <span>Ошика: описание ошибки</span>
+                    </label>
+                    <span class="personal-area-fieldset">Возраст, пол</span>
+                    <span title="Возраст" class="personal-area-info">
+                        <img src="static/img/png/ico/help.png" alt="Помощь">
+                    </span>
+                </div>
+                
+               
+                
+                <div class="personal-area-checkbox">
+                    <label class="personal-area-checkbox-label" title="Кубок">
+                        <span>Кубок:</span>
+                        <input class="checkbox d_n" type="checkbox" name="area-checkbox">
+                        <span class="fake__checkbox"></span>
+                    </label>
+                    <label class="personal-area-checkbox-label" title="Диплом">
+                        <span>Диплом:</span>
+                        <input class="checkbox d_n" type="checkbox" name="area-checkbox">
+                        <span class="fake__checkbox"></span>
+                    </label>
+                    <span class="personal-area-fieldset">Призы</span>
+                    <span title="Призы за конкурс" class="personal-area-info">
+                        <img src="static/img/png/ico/help.png" alt="Помощь">
+                    </span>
+                </div>
+              
+
+                <label title="Описнание">
+                    <span>Описнание:</span>
+                    <textarea  class="input-style" placeholder="Описнание"></textarea>
+                    <span><i>0/3000 символов</i></span>
+                </label>
+                <div class="add-competition-form-btns">
+                <button type="reset">Сбросить</button>
+                <button type="submit">Сохранить</button>
+                </div>
+            </form>
+        </main>
+
+        <section class="my-competitions">
+            <ul>
+                <li class="my-competitions-li-curator">
+                    <span>Петя Кукушкин</span>
+                    <span>Провел конкурсов: <i>15</i></span>
+                    <span><img src="static/img/png/default_avatar.jpg" alt="Петя Кукушкин"></span>
+                </li>
+            </ul>
+            <ul>
+                <h6 class="aside-header-drop">Мои конкурсы:</h6>
+                <li class="my-competitions-li">
+                    <span>5 ноября 2024</span>
+                    <span>25 ноября 2024</span>
+                    <span><a href="">Русский народный танец, народный танец русский, народный танец русский</a></span>
+                    <span>Участники: <i>15</i></span>
+                    <span>Статус: <i>Идет</i></span>
+                    <span>Создано: <i>25.06.2024</i></span>
+                </li>
+                <li class="my-competitions-li">
+                    <span>5 ноября 2024</span>
+                    <span>25 ноября 2024</span>
+                    <span><a href="">Русский народный танец, народный танец русский, народный танец русский</a></span>
+                    <span>Участники: <i>15</i></span>
+                    <span>Статус: <i>Еще не начался</i></span>
+                    <span>Создано: <i>25.06.2024</i></span>
+                </li>
+                <li class="my-competitions-li">
+                    <span>5 ноября 2024</span>
+                    <span>25 ноября 2024</span>
+                    <span><a href="">Русский народный танец, народный танец русский, народный танец русский</a></span>
+                    <span>Участники: <i>15</i></span>
+                    <span>Статус: <i>Голосование</i></span>
+                    <span>Создано: <i>25.06.2024</i></span>
+                </li>
+                <li class="my-competitions-li">
+                    <span>5 ноября 2024</span>
+                    <span>25 ноября 2024</span>
+                    <span><a href="">Русский народный танец, народный танец русский, народный танец русский</a></span>
+                    <span>Участники: <i>15</i></span>
+                    <span>Статус: <i>Окончен</i></span>
+                    <span>Создано: <i>25.06.2024</i></span>
+                </li>
+               <li class="my-competitions-li-a">
+                <a class="my-competitions-a" href="">Смотреть все</a>
+               </li>
+            </ul>
+        </section>
+
+        <footer class="footer-personal-area">
+            
+        </footer>
+    </div>
+</body>
+<script src="static/js/personal-area/personal-area.js" type="module" defer></script>
+<script src="static/js/prohibit.js" defer></script>
+</html>
